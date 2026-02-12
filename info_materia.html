@@ -133,6 +133,31 @@
             margin: 0.2rem;
         }
 
+        .nav-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #667eea;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            z-index: 1000;
+        }
+
+        .nav-button:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
         footer {
             background: rgba(255, 255, 255, 0.95);
             padding: 2rem;
@@ -144,10 +169,18 @@
         @media (max-width: 768px) {
             h1 { font-size: 1.8rem; }
             .info-cards, .topics-grid { grid-template-columns: 1fr; }
+            
+            .nav-button {
+                top: 10px;
+                right: 10px;
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
 <body>
+    <a href="index.html" class="nav-button">← Volver al CV</a>
     <div class="container">
         <header>
             <div class="header-logo">
